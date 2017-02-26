@@ -1,0 +1,56 @@
+<html>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script>
+         function postContactToGoogle() {
+         var latitude=$('#latitude').val();
+         var longitude=$('#longitude').val();
+         var description=$('#description').val();
+         $.ajax({
+         url:"https://docs.google.com/forms/d/e/1FAIpQLSccwx1JnSaptL1JlXy-Jmr2S9NjkisKRsmj0pt_4E6bATYVdA/formResponse",data:{"entry.149945546":latitude,"entry.760486044":longitude,"entry.573971734":description},type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
+         });
+         }
+      </script>
+      <style>
+         .FormRequest {
+         background: lightyellow;
+         width:400px;
+         height:250px;
+         border:1px solid blue;
+         border-radius:10px 10px 10px 10px;
+         }
+         .FormRequest #formRequest{
+         margin-left:20px;
+         font-family:consolas;
+         color: blue;
+         }
+         .FormRequest #formRequest input[type="button"],input[type="reset"]{
+         border:1px solid green;
+         background: darkred;
+         color:white;
+         border-radius:3px 3px 3px 3px;
+         }
+      </style>
+   </head>
+   <body bgcolor="silver">
+      <table  class="FormRequest" align="center">
+         <tr>
+            <td>
+               <form id="formRequest">
+                  Latitude:<br/>
+                  <input type="text" name="latitude" id="latitude" placeholder="latitude" /><br/>
+                  Longitude:<br/>
+                  <input type="text" name="longitude" id="longitude" maxlength="10" placeholder="longitude" /><br/>
+                  Description:<br/>
+                  <textarea name="description" id="description" form="description" rows="4" cols="40" placeholder="Write your query here..."></textarea>
+                  <br/><br/>
+                  <center>
+                     <input type="button" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Submit"/>
+                     <input type="reset" value="Reset"/>
+                  </center>
+               </form>
+            </td>
+            </td>
+      </table>
+   </body>
+</html>
