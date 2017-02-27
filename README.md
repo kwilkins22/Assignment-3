@@ -4,12 +4,16 @@ Geog 384 assignment 3
 Files used:
   - inputInfo.html
       
-      This is the submission form page. Here a user will enter various details about what they saw. When submitted, the information is sent
-      to the google spreadsheet
+      This is the submission form page. Here a user will enter various details about what they saw. When submitted, the information is 
+      sent to the google spreadsheet
+          
           --> see https://www.youtube.com/watch?v=cOgUder1B6k to understand this code...comments under video explain deviations in the
               instructions due to Google Forms updates
-                - Aliens spreadsheet in shared folder
-                - Aliens form in shared folder
+               
+               - Aliens spreadsheet in shared folder
+              
+              - Aliens form in shared folder
+                    
                     ^^These are connected to the code in the html so careful when you change variables
   - homepage.html
       
