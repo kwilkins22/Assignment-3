@@ -32,6 +32,7 @@ Files used:
     - We need to decide our topic so we know what questions to ask
     - Decide on those questions
     - Make it easier to incorporate location into this process
+        
         -Is there someway we can have the user search the location or place a marker and extract the lat/long
 3. Make everything look heckin sweet
 
