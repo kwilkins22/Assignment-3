@@ -8,18 +8,18 @@ Files used:
       to the google spreadsheet
           --> see https://www.youtube.com/watch?v=cOgUder1B6k to understand this code...comments under video explain deviations in the
               instructions due to Google Forms updates
-                -Aliens spreadsheet in shared folder
-                -Aliens form in shared folder
+                - Aliens spreadsheet in shared folder
+                - Aliens form in shared folder
                     ^^These are connected to the code in the html so careful when you change variables
   - homepage.html
       
       This is the main page, it will show the locations of the "spottings" and you'll be able to click around each point and see
       more information. It also has a link that goes to inputInfo.html.
-          --> based off ian's JS fiddle map
+           --> based off ian's JS fiddle map
   - thankYou.html
       
       This is the page that shows up after you submit. It says thank you and has a link to return to homepage.html
-          --> based off of the youtube video
+           --> based off of the youtube video
           
 -------------------Next Steps--------------------
 
