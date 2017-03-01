@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head section can contain metadata and css --> 
+<head>
+ 
+ <!-- links to mapbox stuff? --> 
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
+
+  <!--_______________________ CSS style info__________________ -->
+
+  <style>
+
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+}
+
+/*style info for the map */ 
+#map {
+	/*height: calc(100% - 70px);
+	width: 100%;*/
+
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  width: 100%;   
+ 
+}
+
+#title{
+position: absolute;
+width: 100%;
+height: 100px;
+margin: 0;
+background-color: #6c757d;
+/*padding: 10px 20px 20px 20px;*/
+  
+
+}
+  </style>
+  <!-- ______________________________________________________________--> 
+}
+</head>
+
+<body>
+
+<div id='map'></div>
+
+<div id='title'>
+	<h1><center><b>Test Map</b></center></h1>
+	<p><center>This map is an example</p></center>
+      <center>
+	<form action="inputInfo.html">
+    	<input type="submit" value="File a report" />
+	</form>
+</center>
+</div>
+
+<script>
+//------------------------JAVASCRIPT-----------------------------
+
+//access token from mapbox 
+mapboxgl.accessToken = 'pk.eyJ1IjoiaGFubmFoa2VyIiwiYSI6ImNpdHEzcndkajAwYmwyeW1zd2UxdTAwMnMifQ.hYglJOOC0Mhq7xNYOxc6qg';
+
+
+//initializing the map 
+var mapBoxMap = new mapboxgl.Map({
+  container: 'map', // container element div id -- where to put the map on the page?
+  //style id from mapbox - this can pretty easily be altered 
+  style: 'mapbox://styles/hannahker/citq3t1uz001g2iokzaaaasjt',
+  center: [-73.58781, 45.5088400], // initial map center in [lon, lat]
+  zoom: 12
+});
+
+//------------------------------------------------------------------
+</script>
+</body>
+
+</html>
