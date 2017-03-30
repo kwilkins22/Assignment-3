@@ -729,16 +729,14 @@ function initMap() {
           zoom: 2,
           center: startLatLng 
         });
-
-	for(i=0;i<citiesList.length;i++){
-
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(citiesList[i].Latitude, citiesList[i].Longitude),
-          icon: assignIcon(citiesList[i].Population), 
-          map: map,
+			for(i=0; i<citiesList.length; i++){
+      
+      	var marker = new google.maps.Marker({
+        	position: new google.maps.LatLng(citiesList[i].Latitude, citiesList[i].Longitude),
+          icon: assignIcon(citiesList[i].Population),
           title: citiesList[i].City
         });
-	}
+      }
 }
 initMap();
 
